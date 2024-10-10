@@ -1,38 +1,202 @@
 .App {
-  text-align: center;
+    text-align: center;
+    --button-primary-hover: #f2f2f2;
+    --button-secondary-hover: #f2f2f2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    color: var(--clr-fg);
+    background-color: var(--clr-bg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.light {
+    --clr-bg: #fcfcfc;
+    --clr-bg-alt: #fff;
+    --clr-fg: #555;
+    --clr-fg-alt: #444;
+    --clr-primary: #2978b5;
+    --clr-title:gray;
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dark {
+    /* --clr-bg: #23283e; */
+    --clr-bg: black;
+    /* --clr-bg-alt: #2a2f4c; */
+    --clr-bg-alt: rgb(36, 29, 29);
+    /* --clr-fg: #bdbddd; */
+    --clr-fg: white;
+    /* --clr-fg-alt: #cdcdff; */
+    --clr-fg-alt: rgb(158, 146, 146);
+    /* --clr-primary: #90a0d9; */
+    --clr-primary: brown;
+    --clr-title:white;
+    --shadow: rgba(134, 48, 48, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#home,
+#about,
+#experience,
+#skills,
+#projects {
+    margin-top: 50px;
+    padding: 60px;
+}
+
+.section {
+    margin-top: 5em;
+}
+
+.section__title {
+    text-align: center;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: block;
+    cursor: pointer;
+    padding: 0.8em 1.4em;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: lowercase;
+    transition: transform 0.2s ease-in-out;
+}
+.btn--outline {
+    color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+    position: relative;
+    padding: .5em;
+    overflow: hidden;
+    z-index: 1;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .btn--outline:hover,
+  .btn--outline:focus {
+    color: var(--clr-bg);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .btn--outline:before {
+    content: '';
+    position: absolute;
+    background-color: var(--clr-primary);
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: right 0.2s ease-in-out;
   }
+  
+  .btn--outline:hover:before,
+  .btn--outline:focus:before {
+    right: 0;
+  }
+.btn--plain {
+    text-transform: initial;
+    background-color: var(--clr-bg-alt);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border: 0;
+}
+
+.btn--plain:hover {
+    transform: translateY(-4px);
+}
+
+.link {
+    color: var(--clr-primary);
+    padding: 0 0 0.3em 0;
+    position: relative;
+}
+
+.link:hover {
+    color: var(--clr-primary);
+}
+
+.link::before {
+    content: '';
+    display: inline;
+    width: 0%;
+    height: 0.2em;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--clr-primary);
+    transition: width 0.2s ease-in;
+}
+
+.link:hover::before,
+.link:focus::before {
+    width: 100%;
+}
+
+.link--nav {
+    color: var(--clr-fg);
+    text-transform: lowercase;
+    font-weight: 500;
+}
+
+.link--icon {
+    color: var(--clr-fg);
+}
+
+.ctas {
+    display: flex;
+    gap: 16px;
+}
+
+.ctas a {
+    appearance: none;
+    border-radius: 128px;
+    height: 48px;
+    padding: 0 20px;
+    border: none;
+    border: 1px solid transparent;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+a.primary {
+    border-color: var(--gray-alpha-200);
+    min-width: 180px;
+    gap: 8px;
+    color: teal;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+    a.primary:hover {
+        background: var(--button-primary-hover);
+        border-color: transparent;
+    }
+
+    a.secondary:hover {
+        background: var(--button-secondary-hover);
+        border-color: transparent;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .ctas {
+        flex-direction: column;
+    }
+
+    .ctas a {
+        font-size: 14px;
+        height: 40px;
+        padding: 0 16px;
+    }
+
+    a.secondary {
+        min-width: auto;
+    }
 }

@@ -1,0 +1,9 @@
+<svg  xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 24 24" id="download">
+  <g id="Duotone">
+    <path fill="#fff" d="m21.5 18-10 5.5-10-5.5V7l10-5.5 10 5.5z"></path>
+    <path fill="#cce7ff" d="m19.5 16.5-8 4.5-8-4.5-2 1.5 10 5.5 10-5.5z"></path>
+    <path d="m15.5 13.5-4 4-4-4M11.5 17.5v-10" fill="none" stroke="blue" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+    <path d="m21.5 18-10 5.5-10-5.5V7l10-5.5 10 5.5z" fill="none" stroke="blue" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path>
+  </g>
+  <path id="Frames-24px" fill="none" d="M0 0h24v24H0z"></path>
+</svg>
