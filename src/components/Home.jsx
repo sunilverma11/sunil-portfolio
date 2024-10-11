@@ -10,7 +10,7 @@ function Home() {
             <div className="ctas">
             <a
                 className="primary"
-                href="#"
+                href="#home"
                 target="_blank"
                 rel="noopener noreferrer"
             >
