@@ -1,3 +1,4 @@
+import uniqid from 'uniqid'
 import { experience } from '../../Portfolio'
 import './Experience.css'
 
@@ -9,10 +10,10 @@ const Experience = () => {
       <h2 className='section__title'>Experience</h2>
       {
         experience.map((exp)=>{
-            return<>
-            <h4>{exp.company}</h4><span>{exp.joining}-{exp.left}</span>
+            return<div key={uniqid}>
+            <h3>{exp.company}</h3>started from: <span>{exp.joining} - to:{exp.left}</span>
             <p>{exp.description}</p>
-            </>
+            </div>
         })
       }
     </section>

@@ -23,7 +23,17 @@ const header = {
         company:'Globallogic',
         joining:'18-04-2022',
         left:'10-07-2024',
-        description:'Worked as a full stack developer'
+        description:`Job responsibilities:
+                    Designed and implemented reusable and maintainable React
+                    components to ensure efficient development and scalability.
+                    Utilized Context API for efficient state management,
+                    improving data flow consistency across different
+                    components.
+                    Integrated RESTful APIs for seamless communication
+                    between the front-end and back-end, ensuring robust data
+                    manipulation capabilities.`,
+
+
     }
   ]
   
@@ -36,7 +46,7 @@ const header = {
         'An application for manging tasks and update status',
       stack: ['Javascript', 'React','Node', 'MongoDB'],
       sourceCode:
-        'https://gist.github.com/Jdbain67/142f0ec1c9f1707a78ab7acbcd532b3c',
+        'https://github.com/sunilverma11/manage-app',
       livePreview: 'https://managemydata.netlify.app'
     },
     {
@@ -54,23 +64,7 @@ const header = {
         stack: ['SASS', 'TypeScript', 'React'],
         sourceCode: 'https://github.com',
         livePreview: 'https://github.com'
-      },
-      {
-        name: 'Project 2',
-        description:
-          'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-        stack: ['SASS', 'TypeScript', 'React'],
-        sourceCode: 'https://github.com',
-        livePreview: 'https://github.com'
-      },
-      {
-          name: 'Project 2',
-          description:
-            'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-          stack: ['SASS', 'TypeScript', 'React'],
-          sourceCode: 'https://github.com',
-          livePreview: 'https://github.com'
-        }
+      }
   ]
   
   const skills = [
@@ -90,7 +84,9 @@ const header = {
   
   const contact = {
     // email is optional - if left empty Contact section won't show up
-    email: 'james.daniel.bain@gmail.com'
+    email: 'srksaroya@hotmail.com',
+    linkedin:'https://www.linkedin.com/in/sunilrajverma',
+    github:'https://github.com/sunilverma11'
   }
   
   export { header, about, experience, projects, skills, contact }

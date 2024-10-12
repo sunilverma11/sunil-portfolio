@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 // import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Experience from './components/Experience/Experience';
@@ -9,17 +10,19 @@ import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 
 function App() {
+  const [themeName, setThemeName] = useState(localStorage.getItem("portfolioTheme")?localStorage.getItem("portfolioTheme"):"dark")
+  
   return (
-    <div className="App dark">
+    <div className={"App "+themeName}>
       <header className="App-header">
-        <Navbar/>
+        <Navbar themeName={themeName} setThemeName={setThemeName}/>
       </header>
       <main>
         <Home/>
         {/* <About/> */}
-        <Experience/>
-        <Skills/>
         <Projects/>
+        <Skills/>
+        <Experience/>
         <Contact/>
       </main>
       <footer>

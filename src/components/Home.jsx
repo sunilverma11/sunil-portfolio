@@ -1,5 +1,6 @@
 import TitleMessage from "./TitleMessage";
 import download from "../icons/download.svg"
+import resume from "../utils/Sunil-Verma-Resume.pdf"
 
 function Home() {
     return(
@@ -10,8 +11,7 @@ function Home() {
             <div className="ctas">
             <a
                 className="primary"
-                href="#home"
-                target="_blank"
+                href={resume}
                 rel="noopener noreferrer"
             >
                 <img
