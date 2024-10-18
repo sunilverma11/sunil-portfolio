@@ -1,0 +1,7 @@
+.about-container {
+border-bottom: dashed gray 1px;
+border-top: dashed gray 1px;
+}
+.about-title {
+    margin-bottom: 20px;
+}

@@ -6,14 +6,16 @@ const header = {
   
   const about = {
     // all the properties are optional - can be left empty or deleted
-    name: 'James Daniel',
+    title: 'ABOUT',
+    name: 'Sunil Kumar Verma',
     role: 'Software Engineer | Web Developer',
     description:
-      'Attorney turned Software Engineer and Web Developer. I create attractive, fully, functional websites for small businesses and sole proprieterships.  ',
-    resume: 'https://tinyurl.com/yxfdye3c',
+    `With a strong foundation in law and a passion for technology, I excel as a MERN stack developer. I specialize in designing and implementing engaging, high-performance websites for both large organizations and sole proprietorships. My unique skill set ensures each project is meticulously managed and executed to perfection. Let's enhance your digital presence with a website that's as functional as it is eye-catching.`,
+      // 'Attorney turned Software Engineer and Web Developer. I create attractive, fully, functional websites for small businesses and sole proprieterships.  ',
+    resume: '../utils/Sunil-Verma-Resume.pdf',
     social: {
-      linkedin: 'www.linkedin.com/in/jamdan',
-      github: 'https://github.com/jdbain67'
+      linkedin: 'www.linkedin.com/in/sunilrajverma',
+      github: 'https://github.com/sunilverma11'
     }
   }
 

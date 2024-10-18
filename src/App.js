@@ -8,7 +8,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
-
+import About from './components/About/About'
 function App() {
   const [themeName, setThemeName] = useState(localStorage.getItem("portfolioTheme")?localStorage.getItem("portfolioTheme"):"dark")
   
@@ -19,7 +19,7 @@ function App() {
       </header>
       <main>
         <Home/>
-        {/* <About/> */}
+        <About/>
         <Projects/>
         <Skills/>
         <Experience/>

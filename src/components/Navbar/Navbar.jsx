@@ -16,9 +16,9 @@ function Navbar({themeName, setThemeName}){
             <div className="nav-right">
             {/* <Link href="#home">Home</Link> */}
             <Link href="#home">About</Link>
-            <Link href="#experience">Experience</Link>
-            <Link href="#skills">Skills</Link>
             <Link href="#projects">Projects</Link>
+            <Link href="#skills">Skills</Link>
+            <Link href="#experience">Experience</Link>
             <Link href="#contact">Contact</Link>
             <button
                 type='button'
