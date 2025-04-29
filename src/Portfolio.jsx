@@ -38,8 +38,42 @@ const header = {
 
     }
   ]
-  
   const projects = [
+    {
+      name: 'Project 1',
+      description: '...',
+      stack: ['React', 'Node.js'],
+      sourceCode: '...',
+      livePreview: '...',
+      image: '', // Add this
+    },
+    // ... other projects
+    {
+      name: 'Project 2',
+      description: '...',
+      stack: ['React', 'Node.js'],
+      sourceCode: '...',
+      livePreview: '...',
+      image: '', // Add this
+    },
+    {
+      name: 'Project 3',
+      description: '...',
+      stack: ['React', 'Node.js'],
+      sourceCode: '...',
+      livePreview: '...',
+      image: '', // Add this
+    },
+    {
+      name: 'Project 4',
+      description: '...',
+      stack: ['React', 'Node.js'],
+      sourceCode: '...',
+      livePreview: '...',
+      image: '', // Add this
+    },
+  ];
+  const projects1 = [
     // projects can be added an removed
     // if there are no projects, Projects section won't show up
     {

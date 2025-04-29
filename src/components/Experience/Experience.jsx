@@ -1,23 +1,29 @@
-import uniqid from 'uniqid'
-import { experience } from '../../Portfolio'
-import './Experience.css'
+import uniqid from 'uniqid';
+import { experience } from '../../Portfolio';
+import './Experience.css';
 
 const Experience = () => {
-  if (!experience) return null
+  if (!experience || experience.length === 0) return null;
 
   return (
-    <section className='section contact center' id='experience'>
-      <h2 className='section__title'>Experience</h2>
-      {
-        experience.map((exp)=>{
-            return<div key={uniqid}>
-            <h3>{exp.company}</h3>started from: <span>{exp.joining} - to:{exp.left}</span>
-            <p>{exp.description}</p>
+    <section id="experience" className="experience-section section center">
+      <h2 className="section__title">Experience</h2>
+      <div className="timeline">
+        {experience.map((exp, index) => (
+          <article key={uniqid()} className="timeline-entry">
+            <div className="timeline-marker"></div>
+            <div className="timeline-content">
+              <h3 className="timeline-company">{exp.company}</h3>
+              <p className="timeline-dates">
+                {exp.joining} - {exp.left}
+              </p>
+              <p className="timeline-description">{exp.description}</p>
             </div>
-        })
-      }
+          </article>
+        ))}
+      </div>
     </section>
-  )
-}
+  );
+};
 
 export default Experience;
